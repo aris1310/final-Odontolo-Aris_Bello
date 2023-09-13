@@ -1,10 +1,10 @@
-
+import style from "./Footer.module.css"
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className={style.footer}>
         <p>Powered by</p>
-        <img src="/src/Img/DH.ico" alt='DH-logo' />
+        <img src="/src/Img/images/DH.png" alt='DH-logo' className={style.img}/>
     </footer>
   )
 }
