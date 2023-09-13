@@ -6,8 +6,8 @@ const Card = ({ card }) => {
     // Aqui iria la logica para agregar la Card en el localStorage
   }
 
-  return (
-    <div className={styles.card}>
+  return (<>
+  
         {/* En cada card deberan mostrar en name - username y el id */}
         <img src="/src/Img/images/doctor.jpg" alt="" />
         <h3>{card.id}</h3>
@@ -18,7 +18,7 @@ const Card = ({ card }) => {
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         <button onClick={addFav} className="favButton">Add fav</button>
-    </div>
+  </>
   );
 };
 

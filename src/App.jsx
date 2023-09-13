@@ -10,16 +10,21 @@ import Contact from "./Routes/Contact";
 
 function App() {
   return (
-      <div className="App">
-          <Navbar/>
-          <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/detail/:id" element={<Detail/>} />
-            <Route path="/favs" element={<Favs/>} />
-            <Route path="/contact" element={<Contact/>} />
-          </Routes>
-          <Footer/>
-      </div>
+    
+    
+    <>
+    <div className="App">
+        <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/detail/:id" element={<Detail/>} />
+          <Route path="/favs" element={<Favs/>} />
+          <Route path="/contact" element={<Contact/>} />
+        </Routes>
+    </div>
+    <Footer/>
+    
+    </>
   );
 }
 

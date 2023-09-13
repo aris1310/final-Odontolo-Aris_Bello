@@ -20,9 +20,12 @@ const Home = () => {
   return (
     <main className="" >
       <h1>Home</h1>
-      <div className={styles.divCard}>
+      <div className={styles.card}>
         {cards.map(card => (
-          <Card key={card.id} card={card} />
+          <div className={styles.tarjeta}>
+
+            <Card key={card.id} card={card} />
+          </div>
         ))}
       </div>
     </main>
